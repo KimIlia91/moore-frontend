@@ -1,0 +1,36 @@
+@import '../../../style/style.scss';
+
+.catalog-item {
+    border-radius: 10px;
+    background: #FFF;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    &:hover {
+        box-shadow: 0 5px 20px $main-color;
+        outline: none;
+        transition: all 0.5s ease;
+    }
+    &:not(:hover) {
+        transition: all 0.5s ease;
+    }
+    &__name {
+        color: #000;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    &__count {
+        color: var(--grey-2, #727272);
+        font-size: 12px;
+        font-weight: 400;
+        margin-top: 3px;
+    }
+    img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        object-fit: contain;
+        max-height: 125px;
+        max-width: 170px;
+    }
+}

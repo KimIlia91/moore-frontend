@@ -1,0 +1,18 @@
+.section {
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 18px;
+    }
+    &__title {
+        color: #000;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    &__link {
+        color: #3186C3;
+        font-size: 16px;
+        font-weight: 600;
+    }
+}

@@ -1,0 +1,70 @@
+@import './base/media.scss';
+@import './base/variabales';
+@import './base/buttons';
+
+@font-face {
+    font-family: 'Gilroy';
+    font-display: swap;
+    src: url('../fonts/gilroy/Gilroy-Thin.woff2') format('woff2'),
+        url('../fonts/gilroy/Gilroy-Thin.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    font-display: swap;
+    src: url('../fonts/gilroy/Gilroy-Medium.woff2') format('woff2'),
+        url('../fonts/gilroy/Gilroy-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    font-display: swap;
+    src: url('../fonts/gilroy/Gilroy-Bold.woff2') format('woff2'),
+        url('../fonts/gilroy/Gilroy-Bold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    font-display: swap;
+    src: url('../fonts/gilroy/Gilroy-Bold.woff2') format('woff2'),
+        url('../fonts/gilroy/Gilroy-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    font-family: "Gilroy", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F8FAFF;
+    min-width: 1440px;
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.5s ease;
+    &:active {
+        color: var(--main-color, #1d7bbd);
+    }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.app-container {
+    padding: 0 100px;
+    width: 1440px;
+    margin: 0 auto;
+}

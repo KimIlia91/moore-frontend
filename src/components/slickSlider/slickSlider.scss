@@ -1,0 +1,45 @@
+.slick-arrow {
+    width: 40px;
+    height: 40px;
+    align-items: center;
+}
+
+.slick-prev {
+    left: -65px;
+}
+
+.slick-arrow.slick-prev {
+    &::before {
+        content: none;
+    }
+    img {
+        position: relative;
+        top: 50%;
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.slick-next {
+    right: -51px;
+}
+
+.slick-arrow.slick-next {
+    &::before {
+        content: none;
+    }
+    img {
+        position: relative;
+        top: 50%;
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.slick-slider{
+    width: 101%;
+}

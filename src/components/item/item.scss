@@ -1,0 +1,121 @@
+@import '../../style/style.scss';
+
+.item {
+    padding: 12px;
+    border-radius: 8.291px;
+    border: 1.083px solid #FFF;
+    background: #FFF;
+    width: 199px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__img {
+        position: relative;
+        a {
+            img {
+                width: 175px;
+                height: 149px;
+            }
+        }
+    }
+    &__icon {
+        display: flex;
+        padding: 3.71px;
+        height: 24px;
+        width: 24px;
+        border-radius: 4px;
+        background: rgba(255, 255, 255, 0.50);
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        &:hover {
+            box-shadow: 0 5px 20px $main-color;
+            outline: none;
+            transition: all 0.5s ease;
+        }
+        img {
+            width: 16px;
+            height: 16px;
+        }
+    }
+    &__title {
+        color: var(--Greyscale-Black-90, #1A1919);
+        font-size: 14px;
+        font-weight: 500;
+        min-height: 50px;
+        margin-top: 12px;
+    }
+    &__price {
+        color: #000;
+        font-size: 19px;
+        font-weight: 700;
+        display: flex;
+        text-align: center;
+        justify-content: flex-start;
+        gap: 10px;
+        &-new {
+            color: #F00;
+            font-size: 19px;
+            font-weight: 700;
+        }
+        &-old {
+            margin: auto 0;
+            color: #808080;
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration: line-through;
+            text-align: center;
+        }
+    }
+    &__stock {
+        color: var(--Green, #73CB5E);
+        font-size: 12px;
+        font-weight: 500;
+        margin-top: 2px;
+    }
+    &__set {
+        display: flex;
+        gap: 4px;
+        margin-top: 6px;
+        &-active {
+            color: #3286C2;
+            font-size: 12px;
+            font-weight: 400;
+        }
+        &-disable {
+            color: rgba(0, 0, 0, 0.20);
+            font-size: 12px;
+            font-weight: 400;
+        }
+    }
+    &__order {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 7px;
+        img {
+            width: 33px;
+            height: 33px;
+            border-radius: 100px;
+            background: #F5F5F5;
+            cursor: pointer;
+            &:hover {
+                background: #3286C3;
+                transition: all 0.3s ease;
+            }
+            &:not(:hover) {
+                transition: all 0.3s ease;
+            }
+            &:active {
+                background: var(--main-color, #0f598e);
+            }
+        }
+    }
+    &__counter {
+        color: #000;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 500;
+    }
+}

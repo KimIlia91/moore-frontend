@@ -1,0 +1,20 @@
+.divider {
+    margin-top: 26px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    &__elipse {
+        width: 3px;
+        height: 3px;
+        border-radius: 30px;
+        background: var(--main-color, #0063A9);
+    }
+    &__line {
+        width: 33px;
+        height: 3px;
+        border-radius: 26px;
+        background: var(--main-color, #0063A9);
+    }
+}

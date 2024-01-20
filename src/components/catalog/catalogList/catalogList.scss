@@ -1,0 +1,7 @@
+.catalog-list {
+    display: grid;
+    grid-template: repeat(1,170px)/repeat(7,170px);
+    justify-content: space-between;
+    grid-auto-rows: 170px;
+    gap: 8px;
+}

@@ -1,0 +1,177 @@
+@import '../../style/style.scss';
+
+.footer {
+    margin-top: 35px;
+    background: linear-gradient(107deg, #3186C3 6.46%, #004F86 68.08%);
+    padding: 72px 0 30px 0;
+    &__wrapper {
+        display: flex;
+    }
+    &__main {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 184px;
+    }
+    &__title {
+        color: #FFF;
+        font-size: 14px;
+        font-weight: 400;
+        max-width: 230px;
+        margin-top: 42px;
+    }
+    &__subtitle {
+        color: #FFF;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    &__name {
+        color: #E0E0E0;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    &__descr {
+        color: #FFF;
+        font-size: 15px;
+        font-weight: 500;
+        a {
+            line-height: 160%;
+            color: #FFF;
+            font-size: 15px;
+            font-weight: 500;
+            &:hover {
+                box-shadow: none;
+            }
+        }
+    }
+    &__logo {
+        width: 183.599px;
+        height: 51px;
+    }
+    &__download {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        margin-top: 72px;
+        a {
+            border-radius: 10px;
+            &:hover {
+                box-shadow: 0 5px 20px #003052;
+                outline: none;
+                transition: all 0.5s ease;
+            }
+            &:not(:hover) {
+                box-shadow: none;
+                transition: all 0.5s ease;
+            }
+            &:active {
+                background: var(--main-color, #1d7bbd);
+            }
+        }
+    }
+    &__appstore {
+        width: 143.75px;
+        height: 46px;
+    }
+    &__playmarket {
+        padding: 10.73px 13.83px 9.58px 14.44px;
+        background: #000;
+        border-radius: 8px;
+        width: 143.75px;
+        height: 46px;
+    }
+    &__divider {
+        background: rgba(255, 255, 255, 0.12);
+        width: 1240px;
+        height: 1px;
+        margin-top: 105px;
+    }
+    &__basement {
+        margin-top: 33px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__brend {
+        color: var(--Transparent-white, rgba(255, 255, 255, 0.50));
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 150%;
+    }
+    &__social {
+        display: flex;
+        gap: 15px;
+        margin-right: 6px;
+        a {
+            background-color: rgba(0, 0, 0, 0);
+            border-radius: 100px;
+            img {
+                width: 24px;
+                height: 24px;
+            }
+            &:hover {
+                box-shadow: 0 5px 20px #003052;
+                outline: none;
+                transition: all 0.5s ease;
+            }
+            &:not(:hover) {
+                box-shadow: none;
+                transition: all 0.5s ease;
+            }
+            &:active {
+                background: var(--main-color, #1d7bbd);
+            }
+        }
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    &__sublist {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        &_company {
+            gap: 15px;
+        }
+    }
+    &__item {
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+    }
+    &__addresses {
+        margin-right: 154px;
+    }
+    &__comapny {
+        margin-right: 167px;
+    }
+    &__link {
+        display: flex;
+        gap: 13px;
+        align-items: center;
+        border-radius: 100px;
+        background: #FFF;
+        width: 125px;
+        height: 29px;
+        padding: 6px 14px;
+        &-text {
+            color: #2CB742;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        &:hover {
+            box-shadow: 0 5px 20px #003052;
+            outline: none;
+            transition: all 0.5s ease;
+        }
+        &:not(:hover) {
+            box-shadow: none;
+            transition: all 0.5s ease;
+        }
+        &:active {
+            background: var(--main-color, #1d7bbd);
+        }
+    }
+}
